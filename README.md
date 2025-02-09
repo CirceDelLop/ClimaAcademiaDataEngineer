@@ -10,7 +10,7 @@
 - Imprimir métricas resultantes de desempeño
 
 ##  Obtener de la API de Open-Meteor la información de parámetros diarios
-### Amazon Lambda
+### Servicio de AWS
 Para la Extracción de datos desde la API Open-Meteor, se usó el servicio Lambda de AWS.
 
 Fechas seleccionadas para la obtención de datos:
@@ -110,19 +110,19 @@ Ya que se corrio el ETL Job, se crea un segundo archivo en S3. Los archivos gene
 #### Archivos generados en S3
 ![Salida esperada.](https://i.imgur.com/xgFITx9.png)
 
-#### Histograma
+### Histograma
 ![Salida esperada.](https://i.imgur.com/vpxOKUJ.png)
 ![Salida esperada.](https://i.imgur.com/lSc86xH.png)
-#### Matriz de correlación
+### Matriz de correlación
 ![Salida esperada.](https://i.imgur.com/LKn4i85.png)
 
 - Variables predictoras: Temperatura Máxima y Temperatura Minima
 - Variable objetivo: Temperatura Media
 
-#### Métricas resultandes de desempeño
+### Métricas resultandes de desempeño
 ![Salida esperada.](https://i.imgur.com/dzBS7U4.png)
 
-#### Código ejecutado en Google Colab
+### Código ejecutado en Google Colab
 ```
 https://colab.research.google.com/drive/1DUmGUdjaZ4_QNoYihEfWi5chv7Kj7dzK?usp=sharing
 ```
@@ -130,7 +130,7 @@ https://colab.research.google.com/drive/1DUmGUdjaZ4_QNoYihEfWi5chv7Kj7dzK?usp=sh
 https://github.com/CirceDelLop/ClimaAcademiaDataEngineer/blob/main/ejercicio/cdl_ejercicioapiclima.py
 ```
 
-#### Conclusión
+### Conclusión
 El uso de servicios de AWS como Glue y Lambda ayuda a la eficacia y rapidez para la obtención de datos de APIs externas, en este caso Open-Meteor.
 
 El uso de herramientas como Google Colab, ayuda a analizar y entrenar modelos para poder obtener resultados fiables, con rapidez y a un bajo costo. Lo que hace que sea una herramienta ideal para prácticar y aprender en el área de análisis y entrenamiento.
